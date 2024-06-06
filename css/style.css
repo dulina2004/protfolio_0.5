@@ -1,0 +1,138 @@
+:root {
+    --primary: #c778dd;
+    --grey: #abb2bf;
+    --grey1: #2c3036;
+    --background: #282c33;
+    --white: #ffffff;
+}
+body {
+    background-color: var(--background);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contaner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sec {
+    background-color: red;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.middle {
+    background-color: var(--grey1);
+    height: 100vh;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+nav ul li a span {
+    color: var(--primary);
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.hero {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hero div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero div div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--white);
+}
+.p {
+    color: var(--primary);
+}
+.hero div p {
+    color: var(--grey);
+    font-size: 1.25rem;
+}
+.main_img {
+    width: 400px;
+}
+@media (max-width: 768px) {
+    .sec {
+        display: none;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 4px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    .hero {
+        flex-direction: column;
+    }
+}
