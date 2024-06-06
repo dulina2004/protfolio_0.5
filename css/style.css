@@ -64,6 +64,12 @@ nav ul li a {
 nav ul li a span {
     color: var(--primary);
 }
+.slogan {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .menu-icon {
     display: none;
