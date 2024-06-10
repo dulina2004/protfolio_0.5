@@ -131,6 +131,23 @@ h1 {
     flex-direction: row;
 }
 
+.t_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.t_container div {
+    display: flex;
+    flex-direction: column;
+}
+.t_container div div {
+    /* background-color: red; */
+    border-radius: 2rem;
+
+    width: 12rem;
+    height: 12rem;
+    margin: 2rem;
+}
 @media (max-width: 768px) {
     .sec {
         display: none;
