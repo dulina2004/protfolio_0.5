@@ -12,7 +12,9 @@ body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
 }
-
+.main_img {
+    border-radius: 100%;
+}
 .contaner {
     width: 100%;
     min-height: 100vh;
